@@ -33,7 +33,7 @@ function getUncompletedItems(project) {
         var items = ret[1];
         return items.filter(function(item) {
             item.project = project;
-            return !item.date_string;
+            return !item.date_string || !/\d{1,2}:\d{2}/.test(item.date_string);
         });
     });
 }
@@ -58,7 +58,7 @@ getProjects().then(function(projects) {
         console.log('-> 期限が設定されていないタスクが' + items.length + '件みつかりました:(');
         var count = 1;
         items.forEach(function(item) {
-            console.log('(' + count++ + ') [' + item.project.name + '] ' + item.content);
+            console.log('(' + count++ + ') [' + item.project.name + '] ' + item.date_string + '\t' + item.content);
         });
         process.exit(1/* ERROR */);
     }
