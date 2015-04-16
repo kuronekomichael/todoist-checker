@@ -1,0 +1,27 @@
+{
+  "name": "todoist-checker",
+  "version": "1.0.0",
+  "description": "check todoist items",
+  "main": "check-date.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kuronekomichael/todoist-checker.git"
+  },
+  "keywords": [
+    "todoist",
+    "node"
+  ],
+  "author": "kuronekomichael",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kuronekomichael/todoist-checker/issues"
+  },
+  "homepage": "https://github.com/kuronekomichael/todoist-checker",
+  "dependencies": {
+    "bluebird": "^2.9.24",
+    "request": "^2.55.0"
+  }
+}
