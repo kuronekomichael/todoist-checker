@@ -1,27 +1,35 @@
 {
-  "name": "todoist-checker",
-  "version": "1.0.0",
+  "name": "node-todoist-promise",
+  "version": "0.0.1",
   "description": "check todoist items",
-  "main": "check-date.js",
+  "main": "lib/todoist.js",
   "scripts": {
     "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kuronekomichael/todoist-checker.git"
+    "url": "https://github.com/kuronekomichael/node-todoist-promise.git"
   },
   "keywords": [
     "todoist",
-    "node"
+    "node",
+    "promise"
   ],
   "author": "kuronekomichael",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kuronekomichael/todoist-checker/issues"
+    "url": "https://github.com/kuronekomichael/node-todoist-promise/issues"
   },
-  "homepage": "https://github.com/kuronekomichael/todoist-checker",
+  "homepage": "https://github.com/kuronekomichael/node-todoist-promise",
   "dependencies": {
     "bluebird": "^2.9.24",
+    "lodash": "^3.8.0",
     "request": "^2.55.0"
+  },
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "mocha": "^2.2.4",
+    "proxyquire": "^1.4.0",
+    "sinon": "^1.14.1"
   }
 }
