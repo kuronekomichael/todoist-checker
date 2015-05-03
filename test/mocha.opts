@@ -1,4 +1,5 @@
+--recursive
+--ui bdd
 --reporter spec
---watch
 --require ./test/helper.js
 --timeout 10000
