@@ -23,7 +23,7 @@
   "homepage": "https://github.com/kuronekomichael/node-todoist-promise",
   "dependencies": {
     "bluebird": "^2.9.24",
-    "lodash": "^3.8.0",
+    "lodash": "^4.17.15",
     "request": "^2.55.0"
   },
   "devDependencies": {
